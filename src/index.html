@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="css/woody.css">
+</head>
+<body>
+
+<div class="row justify-content-center pt-5">
+
+    <div>
+
+        <div class="woody border rounded" id="wizard">
+            <div class="step-title">
+                Assistant de création de projet
+            </div>
+
+            <div class="step-body grey lighten-3 row ">
+
+                <div class="step-nav grey lighten-4 col-sm-3">
+                    <a href="#step1" class="step-tab">Etape 1</a>
+                    <a href="#step2" class="step-tab">Etape 2</a>
+                    <a href="#step3" class="step-tab">Etape 3</a>
+                </div>
+
+                <div class="step-container blue-grey lighten-5 col-sm-9">
+
+                    <div class="step-panes">
+
+
+                        <div class="step-pane" id="step1">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi</h3> dolor ducimus eveniet quae rem reprehenderit totam voluptas. Ab ad aliquam animi, architecto dolor id in officia sed sequi totam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt excepturi facilis mollitia nisi sint. Architecto assumenda consequuntur hic inventore non quaerat quibusdam! Deserunt eligendi ex harum iure mollitia odit velit.
+                        </div>
+
+                        <div class="step-pane" id="step2">
+                            <h1>
+                                ETAPE N°2
+                            </h1>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore praesentium quam sunt! Adipisci alias blanditiis consectetur dolorum eaque, eligendi illum incidunt iusto minima natus nihil nisi optio soluta vero?
+                        </div>
+
+                        <div class="step-pane" id="step3">
+                            <h1>
+                                ETAPE N°3
+                            </h1>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi cum deleniti eaque earum esse ex fuga fugiat laboriosam minus nesciunt optio, perferendis praesentium quia sequi sint sunt suscipit tempore!
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/woody.js"></script>
+
+<script>
+    Woody.init('#wizard', {
+            onNextChanging: (form) => {
+                return true;
+            },
+            lili: ''
+    });
+</script>
+
+</body>
+</html>
